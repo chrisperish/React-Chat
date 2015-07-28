@@ -1,0 +1,99 @@
+/*Chat Bubble*/
+body {
+    font-family: "Helvetica Neue" !important;
+    font-size: 20px !important;
+    font-weight: normal !important;
+}
+section {
+    max-width: 700px !important;
+    margin: 50px auto !important;
+}
+    section div {
+        max-width: 500px !important;
+        margin: 0 auto !important;
+        word-wrap: break-word !important;
+        margin-bottom: 10px !important;
+        line-height: 24px !important;
+    }
+.clear {
+    clear: both;
+}
+.formMessage{
+    text-align: center;
+    margin-top: 75px !important;
+    width: 700px;
+    margin: 0 auto;
+}
+.formMessage input{
+}
+.from-me {
+    position: relative !important;
+    padding: 10px 20px !important;
+    color: white !important;
+    background: #0B93F6 !important;
+    border-radius: 25px !important;
+    float: right !important;
+}
+.from-me p, .from-them p{
+    margin: 0;
+}
+
+    .from-me:before {
+        content: "" !important;
+        position: absolute !important;
+        /*z-index:-1 !important;*/
+        bottom: -2px !important;
+        right: -7px !important;
+        height: 20px !important;
+        border-right: 20px solid #0B93F6 !important;
+        border-bottom-left-radius: 16px 14px !important;
+        -webkit-transform: translate(0, -2px) !important;
+    }
+
+    .from-me:after {
+        content: "" !important;
+        position: absolute !important;
+        z-index: 1 !important;
+        bottom: -2px !important;
+        right: -56px !important;
+        width: 26px !important;
+        height: 20px !important;
+        background: white !important;
+        border-bottom-left-radius: 10px !important;
+        -webkit-transform: translate(-30px, -2px) !important;
+    }
+
+.from-them {
+    position: relative !important;
+    padding: 10px 20px !important;
+    background: #E5E5EA !important;
+    border-radius: 25px !important;
+    color: black !important;
+    float: left !important;
+}
+
+.from-them:before {
+    content: "" !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    bottom: -2px !important;
+    left: -7px !important;
+    height: 20px !important;
+    border-left: 20px solid #E5E5EA !important;
+    border-bottom-right-radius: 16px 14px !important;
+    -webkit-transform: translate(0, -2px) !important;
+}
+
+.from-them:after {
+    content: "" !important;
+    position: absolute !important;
+    z-index: 3 !important;
+    bottom: -2px !important;
+    left: 4px !important;
+    width: 26px !important;
+    height: 20px !important;
+    background: white !important;
+    border-bottom-right-radius: 10px !important;
+    -webkit-transform: translate(-30px, -2px) !important;
+}
+
